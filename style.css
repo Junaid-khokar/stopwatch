@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+#lap {
+    display: flex;
+    justify-content: center;
+    gap: 3vmin;
+}
+
+.main {
+    height: 65vmin;
+    width: 85vmin;
+    margin-top: 15vmin;
+    border: .5rem solid rgb(255, 0, 0);
+}
+
+#Lap {
+    position: relative;
+    height: 65vmin;
+    width: 85vmin;
+    margin-top: 15vmin;
+    border: .5rem solid rgb(255, 0, 0);
+    color: white;
+    overflow-y: auto;
+    display: flex;
+}
+
+.outer {
+    border: .5rem solid rgb(255, 0, 0);
+    height: 45vmin;
+    width: 45vmin;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 1vmin;
+}
+
+.container {
+    color: white;
+    display: flex;
+    gap: 1vmin;
+    font-size: 10vmin;
+    height: 10vmin;
+    width: 45vmin;
+    justify-content: center;
+    margin-top: 17vmin;
+}
+
+.button {
+    border: 2px solid white;
+    height: 3.3vmin;
+    width: 10vmin;
+    color: white;
+    font-size: 3vmin;
+    text-align: center;
+    padding: 1vmin;
+    border-radius: 15px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    gap: 10vmin;
+    margin-top: 6vmin;
+    cursor: pointer;
+    width: 70vmin;
+    margin-left: 7vmin;
+    margin-bottom: 2vmin;
+}
+
+#pause {
+    width: 15vmin;
+    text-align: center;
+}
+
+.lap {
+    font-size: 5vmin;
+    margin: 2vmin;
+    color: white;
+    width: 50vmin;
+}
+
+button {
+    margin: 2vmin;
+    font-size: large;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    margin-left: 65vmin;
+    margin-top: 5vmin;
+}
+
+#lap-item {
+    width: 80vmin;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    #lap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main, #Lap {
+        width: 80vw;
+        height: 50vh;
+    }
+    .outer {
+        margin-left: 16vw;
+    }
+    .container {
+        width: 45vw;
+        font-size: 10vw;
+        height: 8vw;
+    }
+    .button {
+        height: 3vw;
+        width: 8vw;
+        font-size: 2.5vw;
+        padding: 1vw;
+    }
+    label {
+        width: 65vw;
+        gap: 5vw;
+    }
+    .lap {
+        font-size: 3vw;
+        width: 60vw;
+    }
+    button {
+        margin-left: 50vw;
+        margin-top: 2vw;
+        font-size: 4vw;
+    }
+}
